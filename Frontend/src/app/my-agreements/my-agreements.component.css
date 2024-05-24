@@ -1,0 +1,46 @@
+.container {
+    margin-top: 50px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .delete-cart-item-btn {
+    font-size: 20px;
+    color: #ff6363;
+    transition: color 0.3s;
+  }
+  .card-img-left {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+  }
+  
+  .order-list {
+    margin-top: 20px;
+  }
+  
+  .order-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .text-right {
+    font-size: 14px;
+  }
+  
+  .text-center {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  

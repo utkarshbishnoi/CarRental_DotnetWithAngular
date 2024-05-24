@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-center mb-4">All Agreements</h3>
+                    <div class="order-list">
+                        <div *ngFor="let item of agreements" class="order-item mb-4 p-3 border">
+                            <div class="row align-items-center">
+                                <div class="col-md-2">
+                                    <img [src]="item.car.image" class="card-img-left img-fluid" alt="Product Image" />
+                                </div>
+                                <div class="col-md-7">
+                                    <h5 class="card-title">{{ item.car.maker }}</h5>
+                                    <h6 class="card-description">{{ item.car.model }}</h6>
+                                    <p class="card-text">Start Date: {{ item.startDate | date: 'medium' }}</p>
+                                    <p class="card-text">End Date: {{ item.endDate | date: 'medium' }}</p>
+                                    <p class="card-text">Total Cost:₹ {{ item.totalCost}}</p>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <button class="btn btn-primary" (click)="EditAgreementByAdmin(item.id)">
+                                        Edit
+                                    </button>
+                                    <button class="btn btn-primary" (click)="RequestForReturn(item.id)">
+                                        Request to Return
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

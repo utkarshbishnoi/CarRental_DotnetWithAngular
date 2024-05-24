@@ -1,0 +1,16 @@
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\bin\Debug\netcoreapp3.1\BLL.deps.json
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\bin\Debug\netcoreapp3.1\BLL.runtimeconfig.json
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\bin\Debug\netcoreapp3.1\BLL.runtimeconfig.dev.json
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\bin\Debug\netcoreapp3.1\BLL.dll
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\bin\Debug\netcoreapp3.1\BLL.pdb
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.AssemblyReference.cache
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\obj\Debug\netcoreapp3.1\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfoInputs.cache
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfo.cs
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CoreCompileInputs.cache
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\obj\Debug\netcoreapp3.1\BLL.dll
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\obj\Debug\netcoreapp3.1\BLL.pdb
+C:\Users\utkarshbishnoi\source\repos\CarRental\BLL\obj\Debug\netcoreapp3.1\BLL.genruntimeconfig.cache

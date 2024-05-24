@@ -1,0 +1,21 @@
+<app-header></app-header>
+<div class="card" style="background-color:ghostwhite">
+  <img class="card-img-top" src="{{ productDetails.image }}" alt="Product Image">
+  <div class="card-body">
+    <h5 class="card-title">{{ productDetails.maker }}</h5>
+    <div class="card-text">
+      <p class="details-label"></p>
+      <p class="details-value">{{ productDetails.model}}</p>
+      <p class="details-label">Available Quantity:</p>
+      <p class="details-value">{{ productDetails.availableQuantity }}</p>
+<p class="details-value text-danger" *ngIf="productDetails.availableQuantity==0">Out of Stock</p>
+
+    <p class="details-label">Rental Price:</p>
+      <p class="details-value"> ₹ {{ productDetails.rentalPrice }}.00/Day</p>
+    </div>
+  </div>
+</div>
+
+<div>
+  <a class="btn btn-primary" routerLink="/products">Back</a>
+</div>

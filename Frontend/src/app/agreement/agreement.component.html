@@ -1,0 +1,44 @@
+<app-header></app-header>
+<br>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <form #rentalAgreementForm="ngForm" (ngSubmit)="book()" class="custom-form">
+                <h3 class="form-title">Car Rental Agreement</h3>
+
+                <!-- Rental Dates -->
+                <div class="form-group">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" id="startDate" name="startDate" class="form-control"
+                        [(ngModel)]="agreement.startDate">
+                </div>
+
+                <div class="form-group">
+                    <label for="endDate">End Date</label>
+                    <input type="date" id="endDate" name="endDate" class="form-control" [(ngModel)]="agreement.endDate">
+                </div>
+
+                <!-- Agreement Rules -->
+                <div class="form-group">
+                    <h4>Agreement Rules</h4>
+                    <ul>
+                        <li>Rule 1:Only authorized drivers are allowed to operate the rented vehicle.</li>
+                        <li>Rule 2:The car must be returned in the same condition as it was rented, with no damage beyond normal wear and tear.</li>
+                        <li>Rule 3:No smoking or pets are allowed in the vehicle.</li>
+                        <li>Rule 4:The car should be returned on or before the specified end date.</li>
+                        <li>Rule 5:The renter is responsible for any traffic violations or fines during the rental period.</li>
+                    </ul>
+                </div>
+
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary">Agree</button>
+                </div>
+            </form>
+
+            <br>
+            <div class="text-center">
+                <a routerLink="/products" class="back-link btn btn-danger">Withdraw</a>
+            </div>
+        </div>
+    </div>
+</div>

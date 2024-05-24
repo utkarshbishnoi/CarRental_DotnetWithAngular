@@ -1,0 +1,43 @@
+.container {
+    margin-top: 50px;
+  }
+  
+  .login-wrap {
+    /* background-color: #fff; */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .login-wrap h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .form-control {
+    border-radius: 4px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+ 
+  .submit:hover {
+    background-color: #0056b3;
+  }
+  
+  .text-danger {
+    font-size: x-large;
+    color: red;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-2 {
+    margin-top: 10px;
+  }
+  

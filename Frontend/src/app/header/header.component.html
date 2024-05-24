@@ -1,0 +1,46 @@
+<header>
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/home">
+        <strong>Car Rental Services</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+        <ul class="navbar-nav flex-grow-1">
+          <li class="nav-item" *ngIf="isloggedIn">
+            <a class="nav-link text-dark" routerLink="/products">Cars</a>
+          </li>
+          <li class="nav-item" *ngIf="isAdmin">
+            <a class="nav-link text-dark" routerLink="/add-product">Add Car</a>
+          </li>
+          <li class="nav-item" *ngIf="isloggedIn && !isAdmin">
+            <a class="nav-link text-dark" routerLink="/my-agreements">View Agreements</a>
+          </li>
+          <li class="nav-item" *ngIf="isloggedIn && isAdmin">
+            <a class="nav-link text-dark" routerLink="/all-agreements">View All Agreements</a>
+          </li>
+          
+          <li class="nav-item dropdown text-right" *ngIf="isloggedIn">
+            <a class="nav-link dropdown-toggle text-dark text-right" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="logout()">
+              <strong>Logout {{ userName }}</strong>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item"  (click)="logout()">Logout</a>
+            </div>
+          </li>
+          <li class="nav-item" *ngIf="!isloggedIn">
+            <a class="nav-link text-dark" routerLink="/products">Cars</a>
+          </li>
+          <li class="nav-item" *ngIf="!isloggedIn">
+            <a class="nav-link text-dark" routerLink="/user-login">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

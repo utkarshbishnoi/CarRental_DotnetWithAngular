@@ -1,0 +1,40 @@
+.container {
+    margin-top: 10px;
+  }
+  
+  .custom-form {
+    background-color: antiquewhite;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+  }
+  
+  .form-group small {
+    margin-left: 2em;
+  }
+  
+  .form-group.text-center {
+    margin-top: 10px;
+  }
+  
+  .btn-primary {
+    margin-right: 10px;
+  }
+  
+  .back-link {
+    display: inline-block;
+  }
+  
+  .back-link:hover {
+    text-decoration: none;
+  }
+  

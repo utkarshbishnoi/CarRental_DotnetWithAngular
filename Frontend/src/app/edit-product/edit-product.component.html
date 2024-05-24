@@ -1,0 +1,67 @@
+<app-header></app-header>
+<br>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <form #productForm="ngForm" (ngSubmit)="updateProduct(productDetails.id)" class="custom-form">
+        <h3 class="form-title">Update Product</h3>
+      
+        <div class="form-group">
+          <label for="productName">Maker</label>
+          <input type="text" id="productName" name="productName" class="form-control" [(ngModel)]="productDetails.maker"
+            pattern="[a-zA-Z0-9\s]*" maxlength="100" #productNameInput="ngModel">
+          <small *ngIf="productNameInput.invalid && (productNameInput.dirty || productNameInput.touched)" class="text-danger">
+            Please enter a valid Maker.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Model</label>
+          <textarea id="description" name="description" class="form-control" required [(ngModel)]="productDetails.model"
+            pattern="[a-zA-Z0-9\s]*" maxlength="255" #descriptionInput="ngModel"></textarea>
+          <small *ngIf="descriptionInput.invalid && (descriptionInput.dirty || descriptionInput.touched)" class="text-danger">
+            Please enter a valid Model.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="availableQuantity">Available Quantity</label>
+          <input type="number" id="availableQuantity" name="availableQuantity" class="form-control"
+            [(ngModel)]="productDetails.availableQuantity" required #availableQuantityInput="ngModel">
+          <small *ngIf="availableQuantityInput.invalid && (availableQuantityInput.dirty || availableQuantityInput.touched)"
+            class="text-danger">
+            Please enter a valid numeric value for available quantity.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image</label>
+          <input type="text" id="image" name="image" class="form-control" [(ngModel)]="productDetails.image" required
+            pattern=".*\.(jpg|jpeg|png)$" #imageInput="ngModel">
+          <small *ngIf="imageInput.invalid && (imageInput.dirty || imageInput.touched)" class="text-danger">
+            Please enter a valid image URL with JPG or PNG format.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="price">Rental Price</label>
+          <input type="number" id="price" name="price" class="form-control" [(ngModel)]="productDetails.rentalPrice" required
+            #productNamesInput="ngModel">
+          <small *ngIf="productNamesInput.invalid && (productNamesInput.dirty || productNamesInput.touched)"
+            class="text-danger">
+            Please enter Price.
+          </small>
+        </div>
+
+        <div class="form-group text-center">
+          <button type="submit" class="btn btn-primary" >Save</button>
+          <button type="button" class="btn btn-danger" (click)="deleteProduct(productDetails.id)">Delete</button>
+        </div>
+      </form>
+      
+      <div class="text-center">
+        <a routerLink="/products" class="back-link btn btn-danger">Back </a>
+      </div>
+    </div>
+  </div>
+</div>
